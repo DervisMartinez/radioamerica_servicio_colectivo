@@ -1,0 +1,144 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --white-color: hsla(0, 100%, 100%, 1);
+  --black-color: hsl(0, 0%, 0%);
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+.login {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.login__form {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  border: 2px solid #000; /* Borde sólido */
+  padding: 2.5rem 1rem; /* Espaciado interno */
+  color: var(--black-color);
+  border-radius: 1rem;
+}
+
+.login__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.login__inputs,
+.login__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.login__box {
+  position: relative; /* Posición relativa para alinear el ícono */
+  border: 2px solid var(--black-color);
+  padding: 1.25rem;
+  border-radius: 4rem;
+}
+
+.login__input,
+.login__button {
+  border: none;
+  outline: none;
+}
+
+.login__input {
+  width: 100%;
+  background: none;
+  color: var(--black-color);
+  padding: 1rem;
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.login__input::placeholder {
+  color: var(--black-color);
+}
+
+.login__box i {
+  position: absolute; /* Posición absoluta para alinear el ícono */
+  top: 50%; /* Alineación vertical al centro */
+  transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+  right: 10px; /* Alineación a la derecha */
+}
+
+.login__button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--black-color);
+  border-radius: 4rem;
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login__button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (min-width: 576px) {
+  .login__form {
+    width: 420px;
+    padding: 2.5rem;
+  }
+  .login__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.mensaje {
+  color: red; /* Color de texto rojo para el mensaje de error */
+}
