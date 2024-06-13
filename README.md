@@ -10,7 +10,7 @@
   APP 5
   Formulario de Servicio Colectivos para la Emisora 
   campos con sus especificaciones de relleno , para que lleguen añ correo asignado de la empresa
-  ![image](https://github.com/DervisMartinez/radioamerica_servicio_colectivo/assets/92455106/8ffc6c06-8849-4749-af84-1afc1c12cccd)
+![image](https://github.com/DervisMartinez/radioamerica_servicio_colectivo/assets/92455106/b54c2d82-a8be-42ce-aeeb-f3464671e8c9)
 
   
 
